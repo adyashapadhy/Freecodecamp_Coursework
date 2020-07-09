@@ -3,6 +3,7 @@
 body{
   background-image: linear-gradient(90deg, #ffffff, #fde2e2);
   font-family:  'Hammersmith One', sans-serif;
+ 
   
 }
 
@@ -165,11 +166,21 @@ textarea{
   cursor: pointer;
 }
 
+footer{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #726a95;
+}
+
 @media screen and (max-width:960px) {
   .form-container{
     background-color:#b83b5e;
     height: 1800px;
-    width: 450px;
+    width: 400px;
     border-radius: 10px;
     text-align: center;
     
