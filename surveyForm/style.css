@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Harmattan&display=swap');
+
+body{
+  background-image: linear-gradient(90deg, #ffffff, #fde2e2);
+  font-family:  'Hammersmith One', sans-serif;
+  
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#title {
+  color: #b83b5e;
+  text-align: center;
+  font-size: 40px;
+}
+
+#description{
+  text-align: center;
+  color: #726a95;
+  font-size: 24px;
+}
+.form-container{
+  background-color:#b83b5e;
+  height: 1300px;
+  width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  
+  padding: 50px;
+  font-size: 20px;
+  color: white;
+  margin: auto;
+  
+}
+.form-control{
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    margin: 15px;
+    border: 3px solid #fde2e2;
+    border-radius: 10px;
+    
+}
+
+#name-label{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#email-label{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+#number-label{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+select{
+    
+    height: 50px;
+    width: 300px;
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid #fde2e2;
+    border-radius: 10px;
+}
+
+#dropdownmenu{
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px; 
+}
+
+.radio, .checkbox {
+    position: relative;
+    align-items: center;
+    margin-left: 15px;
+    display: block;
+    padding-bottom: 10px;
+    text-align: justify;
+
+  }
+
+  .list{
+      position: relative;
+      left: 80px;
+  }
+#media-label{
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px; 
+}
+#wish-label{
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px; 
+}
+  .recommendation,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 15px;
+}
+
+textarea{
+    height: 100px;
+    resize: vertical;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #fde2e2;
+}
+#text{
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-size: 24px;
+   
+}
+
+#submit{
+    background-color: #726a95;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  color: white;
+  border: 0px solid;
+  cursor: pointer;
+}
+
+@media screen and (max-width:960px) {
+  .form-container{
+    background-color:#b83b5e;
+    height: 1800px;
+    width: 450px;
+    border-radius: 10px;
+    text-align: center;
+    
+    padding: 40px;
+    margin: auto;
+    
+}
+
+  #name-label,#email-label,#number-label{
+    font-size: 28px;
+    margin-top: 5px;
+    text-align: left;
+    position: relative;
+    right: 140px;
+
+  }
+
+  #wish-label,#media-label, #dropdownmenu{
+    font-size: 26px;
+    text-align: left;
+    position: relative;
+    right: 45px;
+  }
+
+  .list{
+    
+    position: relative;
+    left: 0px;
+}
+
+.recommendation,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+}
+
+.radio, .checkbox{
+  text-align: left;
+  
+}
+
+select{
+    
+ 
+  position: relative;
+  right: 25px;
+}
+
+.form-control{
+  height: 30px;
+  width: 300px;
+  padding: 5px;
+  margin: 15px;
+  border: 3px solid #fde2e2;
+  border-radius: 10px;
+  position: relative;
+  right: 25px;
+  
+}
+}

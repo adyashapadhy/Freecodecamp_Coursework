@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Survey Form</title>
+</head>
+<body>
+    
+        <div class="main-container">
+          <div class="header">
+          <h1 id="title" class="title">Survey Form</h1>
+          <p id="description" class="description">
+            Thank you for choosing SkillToday,<br> We hope you had a good time with us in the 2 days worskshop series on HTML and CSS.<br>Please provide us with the following information for future contacts
+          </p>
+            </div>
+            <div class="form-container">
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">* Name:</label>
+                <input type="text"name="name" id="name" class="form-control"  placeholder="Enter your name" required />
+              </div>
+               <div class="form-group">
+                <label id="email-label" for="email">* Email:</label>
+                <input type="email" name="email" id="email" class="form-control"  placeholder="Enter your email" required />
+              </div>
+               <div class="form-group">
+                 <label id="number-label" for="number">* Age:<span class="hint"></span></label>
+                <input type="number"name="age" id="number" min="10" max="100" class="form-control"  placeholder="Age" required />
+              </div>
+              <div class="form-group">
+                <label id="dropdownmenu" for="dropdown"> Which position describes your status before the workshop?</label>
+                <select id ="dropdown" class="dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="Begineer">Begineer</option>
+                    <option value="Knew basics">Knew basics </option>
+                    <option value="Was an expert"> Was an expert</option>
+                   
+                </select>
+             </div>
+             <div class="form-group">
+                    <label id="media-label" for="recommendation">How did you hear about us?</label>
+                    <div class="list">
+                    <ul style="list-style: none;">
+                            <li class="radio"><label>Self-Research<input name="radio-buttons" value="self"  type="radio" class="recommendation" ></label></li>
+                            <li class="radio"><label>Social Media<input name="radio-buttons" value="social"  type="radio" class="recommendation" ></label></li>
+                            <li class="radio"><label>Friends<input name="radio-buttons" value="Friends"  type="radio" class="recommendation" ></label></li>
+                            <li class="radio"><label>Others<input name="radio-buttons" value="Others"  type="radio" class="recommendation" ></label></li>
+                    </ul>
+                    </div>
+                    
+                  </div>
+            <div class="form-group">
+                        <label id="wish-label" for="wishtosee">Things you wish to see more of in the future (check all that apply)</label>
+                        <div class="wish-list">
+                            <ul id="wish-label" style="list-style: none;">
+                                <li class="checkbox"><label><input name="wish" value="one-on-one Mentor" type="checkbox"class="recommendation">One-on-One Mentoring</label></li>
+                                <li class="checkbox"><label><input name="wish" value="Live classes" type="checkbox"class="recommendation">Live Classes</label></li>
+                                <li class="checkbox"><label><input name="wish" value="More fun Projects to do" type="checkbox"class="recommendation">More fun Projects to do</label></li>
+                                <li class="checkbox"><label><input name="wish" value="Pre Recorded Course videos" type="checkbox"class="recommendation">Pre Recorded Course videos</label></li>
+                                <li class="checkbox"><label><input name="wish" value="Weekly Webinars" type="checkbox"class="recommendation">Weekly Webinars</label></li>
+                                <li class="checkbox"><label><input name="wish" value="More Courses" type="checkbox"class="recommendation">More Courses</label></li>
+                            </ul>
+                        </div>
+            </div> 
+            
+            <div class="form-group">
+                <label for="textarea" id="text" >Any commments and suggestions for us?</label>
+                <textarea id="textarea" placeholder="Enter your comments here..."></textarea>
+            </div>
+            <dic class="button">
+                    <button id="submit" type="submit">Submit</button>
+            </dic>
+            </form> 
+            </div>
+            <footer>
+                
+            </footer>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+             
+</body>
+</html>
