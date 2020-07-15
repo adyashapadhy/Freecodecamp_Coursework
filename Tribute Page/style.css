@@ -47,7 +47,17 @@ body{
     padding-bottom: 10px;
 }
 
-#tribute-info a{
-    color: #f69e7b;
+ a{
+    color: #eedad1;
+    text-decoration: none;
 }
 
+footer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #eedad1;
+  }
