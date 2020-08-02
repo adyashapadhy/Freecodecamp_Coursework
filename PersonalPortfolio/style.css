@@ -124,20 +124,27 @@ body {
     background-image: linear-gradient(40deg,#ecfcff, #b2fcff);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: #3e64ff;
 }
 
-#projects h1{
-    font-size: 60px;
+.header{
+    font-size: 40px;
     font-family: 'Lobster', cursive;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     
 }
 
-
+.container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .container .project-tile{
     width: 350px;
@@ -149,6 +156,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   
 }
 
@@ -175,7 +183,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     color: #b2fcff;
 }
 
@@ -260,12 +267,13 @@ body {
         position: relative;
         left: 30px;
         font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-
-       
+        font-size: 20px;   
         margin-right: 10px;
     
     
+    }
+    .container{
+        flex-direction: column;
     }
 
 }
