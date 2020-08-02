@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Adyasha Padhy</title>
+    <!-- The freecodecamp code checker was not working for me in teh condition of media queries so I added the media quer in here :)-->
+    <style >
+        @media (max-width: 800px) {
+    #welcome-section h1{
+        font-size: 40px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="brand-title">Adyasha Padhy</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+      </nav> 
+
+      <section id="welcome-section">
+        <h1>Hey I am Adyasha <br> Welcome to my portfolio</h1>
+        
+        
+
+      </section>
+
+      <section id="about-section">
+          <h1>About Me</h1>
+          <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,<br> sed do eiusmod tempor<br> incididunt ut labore et dolore <br>magna aliqua.Ut enim ad minim<br> veniam, quis nostrud exercitat<br> laboris nisi</p>
+      </section>
+
+      <section id="projects">
+          <h1>Projects</h1>
+          <div class="container">
+        <div class="project-tile">
+                <div class="imgBx">
+                        <img src="python-file.png">
+                     </div>
+                     <div class="contentBx">
+                         <h2 ><a href="https://github.com/adyashapadhy/chatbot">Python Chatbot</a></h2>
+                        </div>
+
+        </div>  
+           
+    
+   
+    
+            
+               
+        
+
+       
+        </div>
+      </section>
+
+      <section id="contact-section">
+          <h1>Contact Me</h1>
+          
+              <div class="contact-link">
+                   <a href="https://github.com/adyashapadhy" target="_blank" id="profile-link"> <i class="fab fa-github" ></i></a> 
+              </div>
+              <div class="contact-link">
+                  <a href="https://www.linkedin.com/in/adyasha-padhy-458240142/" target="_blank" id="profile-link"> <i class="fab fa-linkedin-in"></i></a>  
+              </div>
+
+          
+
+      </section>
+
+      <footer class="footer">
+            <p>&copy;AdyashaPadhy2020</p>
+      </footer>
+</body>
+
+<script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+</script>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>

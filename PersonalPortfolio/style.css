@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*
+    font-family: 'Lobster', cursive;
+    #3e64ff
+    font-family: 'Roboto', sans-serif;
+    */
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ecfcff;
+    color: #3e64ff;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #3e64ff;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-links li:hover {
+    background-color: #5edfff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #3e64ff;
+    border-radius: 20px;
+}
+
+#welcome-section{
+    height: 100vh;
+    
+    background-image: linear-gradient(20deg,#5edfff, #3e64ff );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b2fcff;
+    font-family: 'Lobster', cursive;
+
+
+}
+
+#welcome-section h1{
+    font-size: 80px;
+}
+
+#about-section{
+    height: 70vh;
+    background-image: linear-gradient(40deg,#ecfcff, #b2fcff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #3e64ff;
+
+}
+#about-section h1{
+    font-size: 60px;
+    font-family: 'Lobster', cursive;;
+}
+
+#about-section p{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+
+
+}
+
+#projects {
+    height: 90vh;
+    background-image: linear-gradient(40deg,#ecfcff, #b2fcff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3e64ff;
+}
+
+#projects h1{
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+    margin: 20px;
+    
+    
+}
+
+
+
+.container .project-tile{
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    padding: 40px 30px;
+    background: #ecfcff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+.container .project-tile a{
+    text-decoration: none;
+    color: #3e64ff;
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
+}
+.container .project-tile .imgBx{
+    position: relative;
+    text-align: center;
+
+}
+
+.container .project-tile .imgBx img {
+    max-width: 150px;
+}
+#contact-section{
+    height: 70vh;
+    background-image: linear-gradient(20deg,#5edfff, #3e64ff );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #b2fcff;
+}
+
+#contact-section h1{
+    font-size: 60px;
+    font-family: 'Lobster', cursive;;
+}
+
+.contact-link{
+    color: #ecfcff;
+    font-size: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.contact-link a{
+    text-decoration: none;
+    color: #ecfcff;
+}
+.footer{
+    display: flex;
+    position: relative;
+    padding: 15px ;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b2fcff;
+    color:  #5edfff;
+    text-align: center;
+    justify-content: center;
+    opacity: 80%;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    #welcome-section h1{
+        font-size: 40px;
+    }
+
+    #about-section h1{
+        position: relative;
+        left: 20px;
+        font-size: 40px;
+        font-family: 'Lobster', cursive;;
+    }
+    
+    #about-section p{
+        position: relative;
+        left: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+
+       
+        margin-right: 10px;
+    
+    
+    }
+
+}
